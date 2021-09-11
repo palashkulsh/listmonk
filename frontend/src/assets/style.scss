@@ -292,8 +292,16 @@ section {
   }
 }
 
-.autocomplete .dropdown-content {
-  background-color: $white-ter;
+.autocomplete {
+  .dropdown-content {
+    background-color: $white-bis;
+  }
+  a.dropdown-item {
+    &:hover, &.is-hovered {
+      background-color: $grey-lightest;
+      color: $primary;
+    }
+  }
 }
 
 .input, .taginput .taginput-container.is-focusable, .textarea {
@@ -540,6 +548,17 @@ section.campaigns {
         display: inline-block;
       }
     }
+  }
+}
+
+section.analytics {
+  .charts {
+    position: relative;
+    min-height: 100px;
+  }
+
+  .chart {
+    margin-bottom: 45px;
   }
 }
 
